@@ -1,0 +1,49 @@
+<DOCTYPE="html"> 
+    <html lang="en">
+        <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="FOOD.css">
+    <title>FOOD design</title>
+</head>
+
+<body style="background-image:url(./food.jpg)" >
+    <div class="banner-area">
+    <header>
+           <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </header>
+        <div class="banner-text">
+            <h1>Speedy Delivery,
+                Delish Delicacies!</h1>
+            <p><bold>Sobremesario'd is the official restaurant delivery service for Sobremesario. Lovers of Mexican cuisine can now order their favorite delicious dishes with quick and quality delivery!.</bold></p>
+            <a href="#">Menu</a>
+            <a href="#">More</a>
+        </div>
+        <script>
+            
+            document.addEventListener('DOMContentLoaded', function() {
+              
+              var menuItems = document.querySelectorAll('.menu ul li a');
+
+              menuItems.forEach(function(item) {
+                item.addEventListener('click', function(event) {
+                  event.preventDefault(); 
+                  var menuItemText = item.innerText; 
+                  console.log('Clicked menu item:', menuItemText); 
+                });
+              });
+            });
+          </script>
+
+    </div>
+</body>
+</html>
